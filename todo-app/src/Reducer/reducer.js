@@ -7,9 +7,17 @@ function reducer(state, action) {
         todos: [...state.todos, action.payload],
       };
     case types.TOGGLE_TODO:
-      return {};
+      return {
+        ...state,
+        todos: state.todos.map((todo) =>
+          todo.id === action.payload ? { ...todo, status: !todo.status } : todo
+        ),
+      };
     case types.DELETE_TODO:
-      return {};
+      return {
+        ...state,
+        todos: state.todos.filter((todo) => todo.id !== action.payload),
+      };
   }
 }
 

@@ -17,7 +17,9 @@ const TodoInput = () => {
       text: todo,
       status: false,
     };
-    AddTodos(newTodo);
+    if (newTodo.text) {
+      AddTodos(newTodo);
+    }
     setTodo("");
   };
 
