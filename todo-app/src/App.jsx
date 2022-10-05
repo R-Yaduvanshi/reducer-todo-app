@@ -3,7 +3,7 @@ import TodoBody from "./components/TodoBody";
 
 function App() {
   return (
-    <div className="bg-slate-300 h-screen w-full p-10 flex justify-center">
+    <div className="bg-slate-300 h-auto w-full p-10 flex justify-center">
       <TodoBody />
     </div>
   );
