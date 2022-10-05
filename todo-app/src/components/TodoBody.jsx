@@ -1,12 +1,12 @@
 import React from "react";
 import TodoInput from "./TodoInput";
-import Todos from "./Todos";
+import TodosList from "./TodosList";
 
 const TodoBody = () => {
   return (
     <div className="bg-indigo-900 w-7/12 p-5 flex flex-col gap-5 rounded-md">
       <TodoInput />
-      <Todos />
+      <TodosList />
     </div>
   );
 };
